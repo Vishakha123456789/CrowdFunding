@@ -1,122 +1,154 @@
+/* Global Styles */
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: #fdf8fc;
+  color: #271951;
+  margin: 0;
+  padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Headings & Text */
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Rubik Mono One', sans-serif;
+  color: #322165;
 }
 
-.small {
-  font-weight: bold;
-  font-style: italic;
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
 }
 
-.color-nav {
-  background-color: #F5E6E8;
-}
-
-.submitButton {
-  background-color: #271951
-}
-.submitBtn:hover {
-  background-color: #583da8;
-}
-
-.signupBtn{
-  background-color: #271951;
-}
-
-.signupBtn:hover {
-  background-color: #583da8;
-}
-
-.createBtn {
-  background-color: #271951;
-}
-.createBtn:hover {
-  background-color: #583da8;
-}
-
-.paymentBtn {
-  background-color: #271951;
-}
-
-.paymentBtn:hover {
-  background-color: #583da8;
-}
-.signup-button {
-  background-color: #271951;
-  color: #F5E6E8;
-  border-radius: 5px;
-  margin-left: 5px;
-}
-
-.signup-button:hover {
-  background-color: #322165;
-  color: #fff;
-  border-radius: 5px;
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #271951, #583da8);
+  padding: 15px;
 }
 
 .site-title {
-  font-size: x-large;
-  font-weight: 900;
-  color: #192A51;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #F5E6E8;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
-
-.page-header {
-  background-color: #271951;
-  color: #F5E6E8;
-  text-align: center;
-}
-.page-header h1 {
-  color: #F5E6E8;
-}
 .nav-text {
   color: #fff;
-  font-weight: 450;
-  font-size: larger;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-body {
-  background-color: #fff9fa;
-} 
+.nav-text:hover {
+  color: #F5E6E8;
+}
 
+/* Buttons */
+button, .btn {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.more-details, .signup-button, .submitButton, .createBtn, .paymentBtn {
+  background: #271951;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.more-details:hover, .signup-button:hover, .submitButton:hover, .createBtn:hover, .paymentBtn:hover {
+  background: #583da8;
+  transform: scale(1.05);
+}
+
+/* Forms */
 .form {
-  background-color: #fff;
-  box-shadow: 0 0 3px #ccc;
-  padding: 35px  15px 25px 15px;
-  margin-bottom: 30px;
-  margin-top: 14px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form input:focus, .form textarea:focus {
+  border-color: #583da8;
+  box-shadow: 0px 0px 8px rgba(88, 61, 168, 0.5);
+}
+
+/* Login & Signup Form Buttons */
+.submitButton, .signupBtn {
+  background: #583da8;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.submitButton:hover, .signupBtn:hover {
+  background: #271951;
+  color: #fff;
+}
+
+/* Cards */
+.fundraiser-card {
+  background: #fff;
   border-radius: 10px;
-}
-.more-details {
-  background-color: #271951;
-}
-.more-details:hover {
-  background-color: #583da8;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .fundraiser-card:hover {
-  background-color: #dbc6c8;
-  box-shadow: 0 0 3px #aaa;
+  background: #dbc6c8;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
 }
 
+/* Contribution Section */
 .contributions {
-  background-color: #fff;
-  padding: 10px  15px 10px 15px;
-  margin-bottom: 30px;
-  margin-top: 14px;
+  background: #fff;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .contribution-detail {
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
   padding-bottom: 5px;
 }
 
+/* Footer */
+.footer {
+  background: #271951;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    padding: 20px;
+  }
+}
